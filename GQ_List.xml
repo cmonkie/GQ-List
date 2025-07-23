@@ -64,8 +64,8 @@ function gq_list_end(name, line, wildcards, styles)
   WindowText(win, "f1", "Num   Type              From  To  Status     Timer Players", 5, 20, 0, 0, ColourNameToRGB("white"), false)
   WindowText(win, "f1", "----- ----------------- ---- ---- ---------- ----- -------", 5, 30, 0, 0, ColourNameToRGB("white"), false)
 
+  row_del = 0
   if #GQ_table > 0 then
-    row_del = 0
     for k,v in pairs(GQ_table) do
       if string.sub(v, 7,10) == "Less" then
         if toggle25 then
